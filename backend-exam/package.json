@@ -1,0 +1,25 @@
+{
+  "name": "exam-delivery-backend",
+  "version": "1.0.0",
+  "description": "Exam delivery and real-time testing backend",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "nodemon src/server.js",
+    "seed": "node src/utils/seedQuestions.js"
+  },
+  "keywords": ["exam", "testing", "backend"],
+  "author": "Team",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2",
+    "mongoose": "^8.1.0",
+    "dotenv": "^16.4.1",
+    "cors": "^2.8.5",
+    "joi": "^17.12.0",
+    "morgan": "^1.10.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.3"
+  }
+}
