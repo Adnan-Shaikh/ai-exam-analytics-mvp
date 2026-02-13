@@ -99,18 +99,6 @@ Students preparing for competitive exams struggle to:
 
 ---
 
-## 👥 Team
-
-| Name | Role | Responsibilities |
-|------|------|------------------|
-| [Name] | ML Engineer | Data pipeline, algorithms, models |
-| [Name] | ML Engineer | Recommendation engine, predictions |
-| [Name] | Backend Dev | FastAPI, database, analytics APIs |
-| [Name] | Backend Dev | Express, exam delivery, integration |
-| [Name] | Frontend Dev | Dashboard UI, charts, analytics views |
-| [Name] | Frontend Dev | Exam interface, routing, API integration |
-
----
 
 ## 🚀 Quick Start
 
@@ -209,19 +197,7 @@ python generate_sample_data.py
 
 ---
 
-## 📄 License
-
-MIT License - see [LICENSE](LICENSE) file for details
-
----
-
-## 🙏 Acknowledgments
-
-Built for **Loop Hackathon 2026** by Team [Your Team Name]
-
-Special thanks to Bharati Vidyapeeth College of Engineering for organizing this event.
-
----
+Built for **Loop Hackathon 2026** by Team CodeCrest
 
 **⭐ If you find this project helpful, please star the repository!**
 
