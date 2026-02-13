@@ -1,11 +1,8 @@
-cat > README.md << 'EOF'
 # 🎓 AI-Powered Competitive Exam Performance Analytics Platform
 
 **Loop Hackathon 2026 - Track 2: Human + Machine Decision Systems**
 
-[![Live Demo](https://img.shields.io/badge/demo-live-success)](https://exam-analytics.vercel.app)
-[![Backend Status](https://img.shields.io/badge/backend-operational-success)](https://exam-api.onrender.com)
-[![License](https://img.shields.io/badge/license-MIT-blue)](LICENSE)
+[![Live Demo](https://img.shields.io/badge/demo-live-success)](https://exam-analytics.vercel.app) Its just a LLM generated readme for now
 
 ---
 
