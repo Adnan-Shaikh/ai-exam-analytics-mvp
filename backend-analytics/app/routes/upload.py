@@ -6,6 +6,7 @@ import io
 from app.database import get_db
 from app.services.data_processor import DataProcessor
 from app.models.schemas import CSVUploadResponse
+from app.models.attempt import Attempt
 
 router = APIRouter()
 
@@ -87,3 +88,22 @@ async def get_sample_csv():
             "marks_obtained": 4
         }
     }
+
+@router.delete("/clear")
+async def clear_all_data(db: Session = Depends(get_db)):
+    """Clear all data from the database"""
+    try:
+        # Delete all attempts
+        deleted_count = db.query(Attempt).delete()
+        db.commit()
+        
+        return {
+            "message": "All data cleared successfully",
+            "records_deleted": deleted_count
+        }
+    except Exception as e:
+        db.rollback()
+        raise HTTPException(
+            status_code=500,
+            detail=f"Error clearing data: {str(e)}"
+        )
