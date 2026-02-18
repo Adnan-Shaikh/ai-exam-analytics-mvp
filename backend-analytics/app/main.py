@@ -24,12 +24,7 @@ app = FastAPI(
 # Update the CORS middleware section
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=[
-        "http://localhost:5173",
-        "http://localhost:3000",
-        "https://ai-exam-analytics-mvp.vercel.app/",  # Add your Vercel domain
-        "https://*.vercel.app"  # Allow all Vercel preview deployments
-    ],
+    allow_origins= settings.cors_origins_list,
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
