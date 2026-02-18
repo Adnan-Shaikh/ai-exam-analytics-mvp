@@ -261,4 +261,3 @@ export default function ResultsPage({ results = {}, examType, onRetakeTest, onBa
     </div>
   )
 }
-// ...existing code...
