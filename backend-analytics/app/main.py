@@ -2,9 +2,6 @@ from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 import uvicorn
 
-# Import config first
-from app.config import settings
-
 # Import routers
 from app.routes import analytics, upload
 from app.database import engine, Base
@@ -20,11 +17,15 @@ app = FastAPI(
     redoc_url="/redoc"
 )
 
-# CORS Configuration - Use the cors_origins_list property
-# Update the CORS middleware section
+# CORS Configuration - EXACT URLs
 app.add_middleware(
     CORSMiddleware,
-    allow_origins= settings.cors_origins_list,
+    allow_origins=[
+        "http://localhost:5173",
+        "http://localhost:3000",
+        "https://ai-exam-analytics-mvp.vercel.app",
+        "https://*.vercel.app"
+    ],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
